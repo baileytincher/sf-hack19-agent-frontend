@@ -6,7 +6,7 @@ import Claim from './Claim/Claim';
 
 function App() {
   return (
-    <Router basename="/">
+    <Router basename="/sf-hack19-agent-frontend">
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/claim" component={Claim} />
