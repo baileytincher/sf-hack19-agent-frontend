@@ -6,11 +6,16 @@ A fully server-less micro-service to enhance claims data entry through computer 
 
 <img src="diagram.png" width="700">
 
-The client-side front end is an iOS application built with designed to be integrated as a feature into the State Farm Mobile App. The employee side front-end is a progressive web app built in react to offer clean views for both mobile and web. The iOS front end communicates the photos via REST through a serverless API gateway and AWS lambda endpoint.  From there we process the images and upload them to an S3 bucket where Amazon's Rekognition API uses computer vision to extract the text data from the images.
+The client-side front end is an iOS application designed to be integrated as a feature into the State Farm Mobile App. The employee facing front-end is a progressive web app built in react to offer clean views for both mobile and web. The iOS front end communicates the photos via REST through a serverless API gateway and AWS lambda endpoint.  From there we process the images and upload them to an S3 bucket where Amazon's Rekognition API uses computer vision to extract the text data from the images.
 
 We then pass the text through a handful of Python modules to parse the client's information and send it back through to the mobile app where the user can confirm that the information was processed correctly.  Once the user submits, it's then uploaded to a Dynamo database where the agent's front end side can request the information from.
 
+### Client Facing Front End
+<img src="jackie.png" width="700">
+
+### State Farm Agent Facing Front End
 <img src="sf-agent.png" width="700">
+
 
 ## Technologies
 
