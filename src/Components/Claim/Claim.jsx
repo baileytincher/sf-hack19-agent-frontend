@@ -7,6 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 
 import TopBar from './TopBar';
 import ClientCard from './ClientCard';
+import ClaimeeCard from './ClaimeeCard';
 
 const useStyles = makeStyles(theme => ({
 }));
@@ -30,18 +31,17 @@ const Claim = (props) => {
         agentNumber="(800) 782-8332"
         coverage="COMPREHENSIVE"
       />
-      <ClientCard
+    <ClaimeeCard
         personType="CLAIMEE"
         name="JACKIE OH"
-        policyNumber="ZZZ 9999-X15-88Z"
-        effective="Dec 11, 2014 - Dec 01, 2019"
-        make="FORD"
-        model="FUSION"
-        year="2015"
-        vin="Z99ZZ99Z123456780"
-        agent="JAKE"
-        agentNumber="(800) 782-8332"
-        coverage="COMPREHENSIVE"
+        policyNumber="ZZZ 8888-13-99X"
+        insurer="STATE FARM"
+        make="HONDA"
+        model="CIVIC"
+        year="2018"
+        vin="Z99ZZ99Z087654321"
+        effective="Apr 2, 2015 - Apr 1, 2020"
+        coverage="BODILY INJURY"
       />
     </div>
   );
