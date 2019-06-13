@@ -26,6 +26,14 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'space-around',
     overflow: 'hidden',
   },
+  ClaimCard: {
+    marginRight: "10px",
+    width: "100%",
+    flexDirection: "row"
+  },
+  claimCards: {
+    flexWrap: "nowrap",
+  },
 }));
 
 const Claim = (props) => {
@@ -59,6 +67,7 @@ const Claim = (props) => {
         agentNumber="(800) 782-8332"
         coverage="COMPREHENSIVE"
       />
+
       <ClaimeeCard
         personType="CLAIMEE"
         name="JACKIE OH"
@@ -70,8 +79,12 @@ const Claim = (props) => {
         vin="Z99ZZ99Z087654321"
         effective="Apr 2, 2015 - Apr 1, 2020"
         coverage="BODILY INJURY"
+
+        style={{width:"100%"}}
       />
-      <GridList className={classes.AccidentImages}>
+
+
+    <GridList style={{height:"120px"}} className={classes.AccidentImages}>
         {accidentImages.map(aImg => (
           <GridListTile className={classes.AccidentImage}>
             <Card style={{height:"100px"}}>
