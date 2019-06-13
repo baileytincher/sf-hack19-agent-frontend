@@ -10,6 +10,8 @@ The client-side front end is an iOS application built with designed to be integr
 
 We then pass the text through a handful of Python modules to parse the client's information and send it back through to the mobile app where the user can confirm that the information was processed correctly.  Once the user submits, it's then uploaded to a Dynamo database where the agent's front end side can request the information from.
 
+<img src="sf-agent.png" width="700">
+
 ## Technologies
 
 * [serverless](https://serverless.com/) - Application framework used to manage requests between front end and back end.
