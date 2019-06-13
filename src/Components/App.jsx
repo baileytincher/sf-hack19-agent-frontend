@@ -2,13 +2,14 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Home from './Home/Home';
-
+import Claim from './Claim/Claim';
 
 function App() {
   return (
     <Router basename="/">
       <Switch>
-        <Route exact path="/" component={Home}/>
+        <Route exact path="/" component={Home} />
+        <Route path="/claim" component={Claim} />
       </Switch>
     </Router>
 
