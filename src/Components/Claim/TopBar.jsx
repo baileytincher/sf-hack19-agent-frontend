@@ -16,6 +16,8 @@ import ArrowLeft from 'mdi-material-ui/ArrowLeft';
 
 import logo from './sf-logo-white.png';
 
+import {Link} from 'react-router-dom';
+
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
@@ -42,9 +44,14 @@ const TopBar = () => {
     <AppBar position="static" className={classes.topbar}>
       <Toolbar >
         <Grid container direction="row" justify="space-between" align-items="center" >
-          <Grid item style={{height: "100%"}} >
-            <ArrowLeft className={classes.backButton} />
+
+          <Grid item style={{height: "100%",color:"white"}} >
+            <Link to="/" style={{color:"#FFF", width:"100%", height:"100%"}}>
+              <ArrowLeft className={classes.backButton} style={{color:"#FFF"}} />
+            </Link>
           </Grid>
+
+
 
           <Grid item >
             <img src={logo} className={classes.media} />

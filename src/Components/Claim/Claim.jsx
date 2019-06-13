@@ -12,6 +12,8 @@ import TopBar from './TopBar';
 import ClientCard from './ClientCard';
 import ClaimeeCard from './ClaimeeCard';
 
+import {Link} from 'react-router-dom';
+
 const useStyles = makeStyles(theme => ({
   AccidentImages: {
     paddingLeft: "10px",
@@ -59,6 +61,7 @@ const Claim = (props) => {
       <TopBar />
       <GridList className={classes.claimCards} style={{width:"100%", height:"auto"}}>
         <GridListTile className={classes.claimCard} style={{width:"100%", height:"auto"}}>
+
           <ClientCard
             personType="CLAIMANT"
             name="Bailey Tincher"
