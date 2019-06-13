@@ -39,10 +39,10 @@ const ClientCard = (props) => {
   return (
     <Card id="claimant" className={classes.clientCard} style={{paddingLeft: "10px"}}>
       <Typography variant="subtitle2" className={classes.desc} >
-        CLAIMANT
+        {props.personType}
       </Typography>
       <Typography variant="h5" className={classes.title}>
-        {props.clientName}
+        {props.name || "UNKNOWN"}
       </Typography>
 
       <Divider />
@@ -55,7 +55,7 @@ const ClientCard = (props) => {
                 POLICY NUMBER
               </Typography>
               <Typography variant="body2" className={classes.title}>
-                ZZZ 9999-X15-88Z
+                {props.policyNumber || "UNKNOWN"}
               </Typography>
             </Grid>
 
@@ -64,7 +64,7 @@ const ClientCard = (props) => {
                 EFFECTIVE
               </Typography>
               <Typography variant="body2" className={classes.title}>
-                Dec 11, 2014 - Dec 01, 2019
+                {props.effective || "UNKNOWN"}
               </Typography>
             </Grid>
           </Grid>
@@ -75,7 +75,7 @@ const ClientCard = (props) => {
                 MAKE
               </Typography>
               <Typography variant="body2" className={classes.title}>
-                FORD
+                {props.make || "UNKNOWN"}
               </Typography>
             </Grid>
 
@@ -84,7 +84,7 @@ const ClientCard = (props) => {
                 MODEL
               </Typography>
               <Typography variant="body2" className={classes.title}>
-                FUSION
+                {props.model || "UNKNOWN"}
               </Typography>
             </Grid>
           </Grid>
@@ -95,7 +95,7 @@ const ClientCard = (props) => {
                 YEAR
               </Typography>
               <Typography variant="body2" className={classes.title}>
-                2015
+                {props.year || "UNKNOWN"}
               </Typography>
             </Grid>
 
@@ -104,18 +104,18 @@ const ClientCard = (props) => {
                 VIN
               </Typography>
               <Typography variant="body2" className={classes.title}>
-                Z99ZZ99Z123456780
+                {props.vin || "UNKNOWN"}
               </Typography>
             </Grid>
           </Grid>
 
           <Grid item container >
             <Grid item className={classes.textContainer} style={{width:"50%",}}>
-              <Typography variant="subtitle2" className={classes.desc}>
+              <Typography variant="subtitle2" className={classes.desc || "UNKNOWN"}>
                 AGENT
               </Typography>
               <Typography variant="body2" className={classes.title}>
-                JAKE &ensp;<span style={{color:"blue"}}>(800) 782-8332</span>
+                {props.agent || "UNKNOWN"} &ensp;<span style={{color:"blue"}}>{props.agentNumber}</span>
               </Typography>
             </Grid>
 
@@ -124,7 +124,7 @@ const ClientCard = (props) => {
                 COVERAGE
               </Typography>
               <Typography variant="body2" className={classes.title}>
-                COMPREHENSIVE
+                {props.coverage || "UNKNOWN"}
               </Typography>
             </Grid>
           </Grid>

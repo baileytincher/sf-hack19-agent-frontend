@@ -18,10 +18,30 @@ const Claim = (props) => {
     <div id="claim">
       <TopBar />
       <ClientCard
-        sampleImage="accident.jpg"
-        clientName="Bailey Tincher"
-        type="Multi-Accident"
-        timeSince="1h ago"
+        personType="CLAIMANT"
+        name="Bailey Tincher"
+        policyNumber="ZZZ 9999-X15-88Z"
+        effective="Dec 11, 2014 - Dec 01, 2019"
+        make="FORD"
+        model="FUSION"
+        year="2015"
+        vin="Z99ZZ99Z123456780"
+        agent="JAKE"
+        agentNumber="(800) 782-8332"
+        coverage="COMPREHENSIVE"
+      />
+      <ClientCard
+        personType="CLAIMEE"
+        name="JACKIE OH"
+        policyNumber="ZZZ 9999-X15-88Z"
+        effective="Dec 11, 2014 - Dec 01, 2019"
+        make="FORD"
+        model="FUSION"
+        year="2015"
+        vin="Z99ZZ99Z123456780"
+        agent="JAKE"
+        agentNumber="(800) 782-8332"
+        coverage="COMPREHENSIVE"
       />
     </div>
   );
