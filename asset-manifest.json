@@ -1,13 +1,13 @@
 {
-  "main.js": "/static/js/main.ea4a9378.chunk.js",
-  "main.js.map": "/static/js/main.ea4a9378.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-  "static/js/2.07d92253.chunk.js": "/static/js/2.07d92253.chunk.js",
-  "static/js/2.07d92253.chunk.js.map": "/static/js/2.07d92253.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.22909ba7049970343e128db128c7fbf4.js": "/precache-manifest.22909ba7049970343e128db128c7fbf4.js",
-  "service-worker.js": "/service-worker.js",
-  "static/media/sf-full-white.png": "/static/media/sf-full-white.7f5b9af3.png",
-  "static/media/sf-logo-white.png": "/static/media/sf-logo-white.c506d72c.png"
+  "main.js": "btin.io/sf-hack19-agent-frontend/static/js/main.11958816.chunk.js",
+  "main.js.map": "btin.io/sf-hack19-agent-frontend/static/js/main.11958816.chunk.js.map",
+  "runtime~main.js": "btin.io/sf-hack19-agent-frontend/static/js/runtime~main.986637ca.js",
+  "runtime~main.js.map": "btin.io/sf-hack19-agent-frontend/static/js/runtime~main.986637ca.js.map",
+  "static/js/2.07d92253.chunk.js": "btin.io/sf-hack19-agent-frontend/static/js/2.07d92253.chunk.js",
+  "static/js/2.07d92253.chunk.js.map": "btin.io/sf-hack19-agent-frontend/static/js/2.07d92253.chunk.js.map",
+  "index.html": "btin.io/sf-hack19-agent-frontend/index.html",
+  "precache-manifest.b1116b3b13843c2ac5146d190cd3fa01.js": "btin.io/sf-hack19-agent-frontend/precache-manifest.b1116b3b13843c2ac5146d190cd3fa01.js",
+  "service-worker.js": "btin.io/sf-hack19-agent-frontend/service-worker.js",
+  "static/media/sf-full-white.png": "btin.io/sf-hack19-agent-frontend/static/media/sf-full-white.7f5b9af3.png",
+  "static/media/sf-logo-white.png": "btin.io/sf-hack19-agent-frontend/static/media/sf-logo-white.c506d72c.png"
 }
