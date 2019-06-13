@@ -11,7 +11,7 @@ The client-side front end is an iOS application designed to be integrated as a f
 We then pass the text through a handful of Python modules to parse the client's information and send it back through to the mobile app where the user can confirm that the information was processed correctly.  Once the user submits, it's then uploaded to a Dynamo database where the agent's front end side can request the information from.
 
 ### Client Facing Front End
-<img src="jackie.png" width="700">
+<img src="Artboard.png" width="700">
 
 ### State Farm Agent Facing Front End
 <img src="sf-agent.png" width="700">
