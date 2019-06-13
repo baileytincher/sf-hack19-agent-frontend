@@ -1,68 +1,32 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Yay-Bear
 
-## Available Scripts
+A fully server-less micro-service to enhance claims data entry through computer vision.  
 
-In the project directory, you can run:
+## How It Works
 
-### `npm start`
+The client-side front end is an iOS application built with the idea that it could be streamlined into the State Farm Mobile App, and the agent-side front end is a React webpage.  The iOS front end communicates the photos with a serverless gateway and AWS lambda function.  From there we process the images and upload them to an S3 bucket where Amazon's Rekognition API uses image recognition to extract text from the photos.  
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+We then pass the text through a handful of Python modules to parse the client's information and send it back through to the mobile app where the user can confirm that the information was processed correctly.  Once the user submits, it's then uploaded to a Dynamo database where the agent's front end side can request the information from.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Technologies
 
-### `npm test`
+* [serverless](https://serverless.com/) - Application framework used to manage requests between front end and back end.
+* [AWS Lambda](https://aws.amazon.com/lambda/) - Processes image data and communicates it with other AWS services.
+* [S3 Buckets]((https://aws.amazon.com/s3/)) - Used to store the uploaded images for use by Rekognition.
+* [Rekognition](https://aws.amazon.com/rekognition/) - Amazon's computer vision API: extracts the textual content from the images. 
+* [DynamoDB](https://aws.amazon.com/dynamodb/) - Document database used to store the client's processed information.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Contributors
 
-### `npm run build`
+* **Bailey Tincher** - *Full Stack*
+* **Jackie Oh** - *Mobile Dev*
+* **Grace Robbins** - *Mobile Dev*
+* **Connor McCloskey** - *Back End*
+* **Alok Kamatar** - *Back End*
+* **Divya Bhati** - *Back End*
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Acknowledgments
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* The amazing people at State Farm who organized Hack Day
+* Amazon for the various AWS services they provide
+* Eric Hughes sparked our initial motivation from within
