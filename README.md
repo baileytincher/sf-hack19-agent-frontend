@@ -4,7 +4,7 @@ A fully server-less micro-service to enhance claims data entry through computer 
 
 ## How It Works
 
-![Alt text](/diagram.png?raw=true "AWS Diagram")
+<img src="diagram.png" width="48">
 
 The client-side front end is an iOS application built with the idea that it could be streamlined into the State Farm Mobile App, and the agent-side front end is a React webpage.  The iOS front end communicates the photos with a serverless gateway and AWS lambda function.  From there we process the images and upload them to an S3 bucket where Amazon's Rekognition API uses image recognition to extract text from the photos.  
 
